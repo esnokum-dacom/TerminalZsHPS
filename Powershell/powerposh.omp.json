@@ -7,9 +7,9 @@
       "segments": [
         {
           "leading_diamond": "\u2554\ue0b6",
-          "trailing_diamond": "█\ue0c6 ",
-          "foreground": "#ffffff",
-          "background": "#000000",
+          "trailing_diamond": "\ue0b4 ",
+          "foreground": "#101010",
+          "background": "#ffffff",
           "type": "os",
           "style": "diamond"
         },
@@ -18,8 +18,8 @@
             "prefix": "<parentBackground>\ue0c6</>",
             "root_icon": "\uf09c"
           },
-          "leading_diamond": " ",
-          "trailing_diamond": " ",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
           "foreground": "#000000",
           "background": "#ffffff",
           "type": "root",
@@ -31,22 +31,23 @@
             "style": "full"
           },
           "foreground": "#000000",
-          "powerline_symbol": "\ue0c6",
+          "powerline_symbol": "\ue0b4",
           "background": "#ffffff",
           "type": "path",
           "style": "powerline",
-          "leading_powerline_symbol": "\ue0c7 "
+          "leading_powerline_symbol": "\ue0b6"
         },
         {
           "properties": {
-            "branch_icon": "\ue0a0",
-            "fetch_status": true,
+            "branch_icon": "\ue0a0 ",
+            "fetch_status": false,
+            "fetch_stash_count": false,
             "fetch_upstream_icon": true,
-            "template": "{{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if Staging.Changed }}<#b0b0b0> \ue0c6 {{ .Staging.String }}</>{{ end }}"
+            "template": "{{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if Staging.Changed }}<#b0b0b0>{{ .Staging.String }}</>{{ end }}"
           },
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0a0",
-          "background": "#000000",
+          "foreground": "#101010",
+          "powerline_symbol": "\ue0b4",
+          "background": "#ffffff",
           "type": "git",
           "style": "powerline",
           "background_templates": [
@@ -65,9 +66,9 @@
         {
           "properties": {
             "display_package_manager": true,
-            "npm_icon": " <#303030>✦</>",
+            "npm_icon": "<#303030>✦</>",
             "prefix": "\ue0c7",
-            "yarn_icon": " <#303030>இ</>"
+            "yarn_icon": "<#303030>இ</>"
           },
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4",
@@ -82,8 +83,8 @@
             "prefix": " \ue0c7",
             "time_format": "15:04"
           },
-          "leading_diamond": " ",
-          "trailing_diamond": " ",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
           "foreground": "#000000",
           "background": "#f0f0f0",
           "type": "time",
@@ -100,7 +101,7 @@
         {
           "type": "text",
           "style": "diamond",
-          "foreground": "#000000",
+          "foreground": "#ffffff",
           "template": "╚❯ "
         }
       ]
